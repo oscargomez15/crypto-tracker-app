@@ -1,13 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import axios from 'axios';
 import { useState } from 'react';
-import { Coin } from './Coin';
 import './App.css'
 import './card.css'
 import { Card } from './Card'
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 export default function App() {
 const [coins, setCoins] = useState([]);
 const [search, setSearch] = useState('');
