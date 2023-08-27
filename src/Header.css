@@ -2,7 +2,70 @@
     display: flex;
     background-color: rgb(48, 48, 48);
     min-height: 100px;
+    align-items: center;
     justify-content: space-around;
+}
+
+.app-title, p{
+    color:white
+}
+
+.logo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 1;
+}
+
+.logo{
+    display: flex;
+    color: white;
+    position: relative;
+}
+
+.logo .O{
+    margin-bottom: 10%;
+}
+
+.logo .logo-divider{
+    position: absolute;
+    background-color:white;
+    height: 90%;
+    width: 2px;
+    left: 50%;
+    transform: rotate(30deg);
+    z-index: 1;
+}
+
+.hide-divider{
+    position: absolute;
+    background-color: rgb(48, 48, 48);
+    width: 15px;
+    height: 92%;
+    transform: rotate(30deg);
+    left: 37%;
+    z-index: 0;
+}
+
+.logo .G {
+    margin-top: 20%;
+}
+
+.name p{
+    letter-spacing: 3px;
+}
+
+.role{
+    font-size: .7rem;
+}
+
+.title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 2;
 }
 
 .socials-container{
@@ -10,23 +73,9 @@
     align-items: center;
     justify-content: space-between;
     color: white;
-    flex-basis: 10%
+    flex-basis: 10%;
 }
 
 .socials-container a{
     color: white;
-}
-.title-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.app-title, p{
-    color:white
-}
-
-.empty-container{
-    flex-basis: 10%;
 }
