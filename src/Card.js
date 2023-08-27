@@ -1,6 +1,5 @@
 import React from 'react'
 import './card.css'
-import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowTrendUp, faArrowTrendDown} from '@fortawesome/free-solid-svg-icons'
 
@@ -9,7 +8,7 @@ export const Card = ({image,name,symbol,price,volume,marketCap,priceChange}) => 
   return (
 
     <div className='coin'>
-        <img src={image}/>
+        <img src={image} alt={`${name}-logo`}/>
         {name.toLowerCase() === symbol.toLowerCase() ? (
         <p className='coin-name'>{name}</p>):
         <p className='coin-name'>{`${name} ${symbol.toUpperCase()}`}</p>}
